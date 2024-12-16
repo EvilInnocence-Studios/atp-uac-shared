@@ -1,3 +1,4 @@
+import { IPermission } from "../permissions/types";
 import { SafeUser } from "../user/types.d";
 
 export declare interface ILoginRequest {
@@ -7,5 +8,6 @@ export declare interface ILoginRequest {
 
 export declare interface ILoginResponse {
     user: SafeUser;
+    permissions: IPermission[];
     loginToken: string;
 }
