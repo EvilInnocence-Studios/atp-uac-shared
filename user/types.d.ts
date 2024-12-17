@@ -1,5 +1,6 @@
 export declare interface IUser {
     id: number;
+    email: string;
     userName: string;
     passwordHash: string;
     mustUpdatePassword: boolean;
