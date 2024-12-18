@@ -8,8 +8,8 @@ export declare interface IUser {
 
 export type SafeUser = Omit<IUser, 'passwordHash'>;
 
-export type NewUser = Omit<IUser, 'id'>;
-
-export type UserUpdate = NewUser & {
-    password?: string;
+export type UserUpdate = SafeUser & {
+    password: string;
 }
+
+export type NewUser = Omit<UserUpdate, 'id'>;
