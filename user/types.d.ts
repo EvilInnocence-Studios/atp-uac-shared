@@ -4,6 +4,11 @@ export declare interface IUser {
     userName: string;
     passwordHash: string;
     mustUpdatePassword: boolean;
+    prefix: string;
+    firstName: string;
+    lastName: string;
+    suffix: string;
+    createdAt: string;
 }
 
 export type SafeUser = Omit<IUser, 'passwordHash'>;
