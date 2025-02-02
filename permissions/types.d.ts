@@ -1,5 +1,5 @@
 export declare interface IPermission {
-    id: number;
+    id: string;
     name: string;
     description: string;
 }

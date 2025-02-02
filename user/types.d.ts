@@ -1,5 +1,5 @@
 export declare interface IUser {
-    id: number;
+    id: string;
     email: string;
     userName: string;
     passwordHash: string;

@@ -1,5 +1,5 @@
 export declare interface IRole {
-    id: number;
+    id: string;
     name: string;
     description: string;
 }
