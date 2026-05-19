@@ -2,6 +2,7 @@ export declare interface IUser {
     id: string;
     email: string;
     userName: string;
+    hashAlgorithm: "sha-256" | "bcrypt";
     passwordHash: string;
     mustUpdatePassword: boolean;
     prefix: string;
