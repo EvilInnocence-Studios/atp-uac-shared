@@ -9,7 +9,6 @@ export declare interface IUser {
     firstName: string;
     lastName: string;
     suffix: string;
-    subscriptionId: string | null;
     createdAt: string;
 }
 
